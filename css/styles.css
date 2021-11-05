@@ -4,7 +4,6 @@
   padding-top: 50px;
 }
 
-
 select {
   width: 200px;
   margin: 10px;
@@ -32,10 +31,8 @@ ul {
   font-size: 25px;
 }
 
-
 h1 {
   text-align: center;
-  color: black;
   font-size: 70px;
   text-decoration: underline;
   color: cornsilk;
@@ -58,7 +55,7 @@ h1 {
 #picture {
   background-size: cover; 
   height: auto; 
-  padding-top:380px;
+  padding-top:140px;
 
 }
 
