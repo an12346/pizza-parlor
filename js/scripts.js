@@ -1,8 +1,21 @@
 //Business Logic
 
-function Pizza (size, toppings) {
+function Pizza(size, toppings) {
     this.size = size 
-    this.toppings = [];
+    this.toppings = [toppings];
+    this.cost = 0;
+};
+
+Pizza.prototype.calculateCost = function(size, toppings) {
+      if (this.size === "large") {
+        this.cost += 12;
+      } else if (this.size === "small") {
+        this.cost += 7;
+      } if (this.toppings === ["pepperoni", "sausage"]) {
+        this.cost += 3;
+      } else if (this.toppings === ["olives", "mushrooms"]) {
+        this.cost += 2;
+      }
 };
 
 
