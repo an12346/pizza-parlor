@@ -4,13 +4,16 @@ Code: pizzaOrder = new Pizza ("small", ["pepperoni"]);
 Expected Output: Pizza {size: "small", toppings: ["pepperoni"]}
 
 
-Describe: caluculateCost();
+Describe: caluculateCost(size);
 Test: "It will generate a price for the pizza, based on a user's size selection"
 Code: pizzaOrder = new Pizza ("small", ["pepperoni"]);
-Expected output: Pizza ("small", ["pepperoni"], cost: 7);
+Expected Output: Pizza ("small", ["pepperoni"], cost: 7);
 
 
-
+Describe: calculateCost(size, toppings)
+Test: "It will generate a price for the pizza, based on a user's size and toppings selection"
+Code: pizzaOrder = new Pizza ("small", ["pepperoni"]);
+Expected Output: pizzaOrder = Pizza ("small", ["pepperoni"], cost: 10);
 
 
 1. Write out plan for business logic

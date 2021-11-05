@@ -7,27 +7,16 @@ function Pizza(size, toppings) {
 };
 
 Pizza.prototype.calculateCost = function(size, toppings) {
-      if (this.size === "large") {
-        this.cost += 12;
-      } else if (this.size === "small") {
+      if (this.size === "1") {
         this.cost += 7;
-      } if (this.toppings === ["pepperoni", "sausage"]) {
+      } else if (this.size === "2") {
+        this.cost += 12;
+      } if (this.toppings === "3") {
         this.cost += 3;
-      } else if (this.toppings === ["olives", "mushrooms"]) {
+      } else if (this.toppings === "4") {
         this.cost += 2;
       }
 };
-
-
-
-
-
-
-
-
-
-
-
 
 //Objects:
   //Constuctor for Pizza
@@ -39,21 +28,16 @@ Pizza.prototype.calculateCost = function(size, toppings) {
     //-Input for size selection
     //-Input for toppings selection
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //UI Logic
+
+$(document).ready(function() {
+  $("form#order-selection").submit(function(event) {
+    event.preventDefault();
+    const size = ($("#size").val());
+    const toppings = ($("#toppings").val());
+    let newPizza = new Pizza(size, toppings);
+    newPizza.calculateCost(size, toppings);
+    $(".price").text(newPizza.cost);
+    $("#price-output").show();
+  });
+});
