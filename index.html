@@ -11,52 +11,57 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
-  <h1>Welcome to the Epicodus Pizza Parlor!</h1>
+  <div id="picture" style="background-image: url('img/pizza.jpg')">
+    <h1>Epicodus Pizza Co.</h1>
+  </div>
+</body>
+<body>
   <h4>Menu:</h4>
-  <div>
+    <div class="toppings">
     <h5>Topping Options:</h5>
     <ul>
       <li>Sausage and Pepperoni</li>
       <li>Mushrooms and Olives</li>
       <li>Veggie</li>
     <ul>
-  </div>
-  <div>
-    Size Options:
+      <h5>Size Options:</h5>
+    <ul>
+      <li>Small</li>
+      <li>Medium</li>
+      <li>Large</li>
   </div>
 
-  
-    
+  <div id="important"> 
     <h3>To start an order, fill out the selections below:</h3>
   
-  <form id="order-selection">
-    <div>
-      <label for="size"><strong>Select Size:</strong></label>
-      <select id="size">
-        <option value="1">Small</option>
-        <option value="2">Medium</option>
-        <option value="3">Large</option>
-      </select>
-    </div>
+    <form id="order-selection">
+      <div>
+        <label for="size"><strong>Select Size:</strong></label>
+        <select id="size">
+          <option value="1">Small</option>
+          <option value="2">Medium</option>
+          <option value="3">Large</option>
+        </select>
+      </div>
     
-    <div>
-      <label for="toppings"><strong>Select Toppings:</strong></label>
-      <select id="toppings">
-        <option value="4">Sausage and Pepperoni</option>
-        <option value="5">Mushrooms and Olives</option>
-        <option value="6">Veggie</option>
-      </select>
-    </div>
-    <div>
-      <button type="submit">Submit Order</button>
-    </div>
+      <div>
+        <label for="toppings"><strong>Select Toppings:</strong></label>
+        <select id="toppings">
+          <option value="4">Sausage and Pepperoni</option>
+          <option value="5">Mushrooms and Olives</option>
+          <option value="6">Veggie</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Submit Order</button>
+      </div>
 
-  </form>
+    </form>
 
-  <div id="price-output">
-    <p>Price: $<span class="price"></span></p>
-    <p>Thank you for your order!</p>
+    <div id="price-output">
+      <p>Price: $<span class="price"></span></p>
+      <p id="thankyou">Thank you for your order!</p>
+    </div>
   </div>
-
 </body>
 </html>

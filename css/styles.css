@@ -12,4 +12,43 @@ button {
   margin: 10px
 }
 
+h4 {
+  text-decoration: underline;
+  text-align: center;
+}
 
+.toppings {
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+  list-style-type: circle;
+}
+
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  text-decoration: underline;
+  color: cornsilk;
+  text-shadow: 0 0 2px rgba(245, 160, 86, 0.906);
+}
+
+#important {
+  text-align: center;
+}
+
+#thankyou {
+  font-family: cursive;
+  text size: 50;
+}
+
+#picture {
+  background-size: cover; 
+  height: auto; 
+  padding-top:380px;
+
+}
